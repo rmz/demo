@@ -102,12 +102,8 @@
 
     <a-scene fog="type: linear; color: yellow; density: 0.005">
       <a-assets>
-        <!-- https://sketchfab.com/3d-models/elephant-animation-idle-a8e7e10f005f4baab0a2f5079d759fcd -->
-        <a-asset-item id="elephant" src="img/elephant/scene.gltf"></a-asset-item>
         
         <a-asset-item id="human" src="img/lowpolyMale/scene.gltf"></a-asset-item>
-
-        <audio id="human01" src="audio/esfuerzo03.mp3" preload="auto"></audio>
       </a-assets>
 
       <!-- Player. -->
@@ -145,15 +141,6 @@
         position="-5 1.5 -10"
         rotation="0 60 0"
         sound="src: #human01"
-        sound-events>
-      </a-gltf-model>
-
-      <a-gltf-model src="#elephant"
-        scale="0.1 0.1 0.1"
-        position="0 0.5 -40"
-        rotation="0 0 0"
-        sound="src: #human01"
-        animation-mixer="clip: idle"
         sound-events>
       </a-gltf-model>
 
